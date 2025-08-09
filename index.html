@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Tetris</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+  <div class="game-wrap">
+    <canvas id="tetris" width="12" height="20"></canvas>
+  </div>
+
+  <div class="sidebar">
+    <div class="card">
+      <div class="hud-row"><div class="label">Score</div><div id="score" class="value">0</div></div>
+      <div class="hud-row"><div class="label">Level</div><div id="level" class="value">1</div></div>
+      <div class="hud-row"><div class="label">Lines</div><div id="lines" class="value">0</div></div>
+      <div class="hud-row">
+        <div class="label">Difficulty</div>
+        <select id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="normal" selected>Normal</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="card center">
+      <canvas id="next" width="6" height="6"></canvas>
+    </div>
+
+    <div class="card">
+      <div class="controls">
+        <button id="start">Start / Restart</button>
+        <button id="pause">Pause</button>
+        <button id="toggle-sound">Sound: On</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
