@@ -42,7 +42,7 @@ __🚀 How to Play:__
 
 __🌐 Live Demo:__
 
-- https://faran-inam.github.io/Tetris/
+- https://faraninamdev.github.io/Tetris/
 
 __📄 License:__
 
